@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     emailLink.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('Email: your-email@example.com');
+        alert('Email: mauritcio.bonilla@outlook.com');
     });
 });
