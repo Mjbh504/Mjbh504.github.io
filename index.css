@@ -1,45 +1,39 @@
-/* Estilo general del cuerpo */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #e0ffe1, #a8e6cf); /* Fondo solar punk */
-    color: #32caca;
+    background: linear-gradient(120deg, #f4f4f4, #dfe9f3); /* Fondo profesional con tonos neutros */
+    color: #333333;
 }
 
-/* Encabezado principal */
 header {
-    background-color: #2c6d79;
+    background-color: #005f73; /* Azul profesional oscuro */
     color: white;
     padding: 20px 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor principal */
 .container {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos */
 h1, h2 {
-    color: #3e388e;
-    text-shadow: 1px 1px 2px #f0f0f0;
+    color: #0a9396; /* Tonos azules suaves */
+    text-shadow: 1px 1px 2px #e0e0e0;
 }
 
-/* Listas */
 ul {
     list-style-type: disc;
     margin: 10px 0 20px 20px;
-    color: #555;
+    color: #555555;
 }
 
-/* Estilo para habilidades */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -48,8 +42,8 @@ ul {
 }
 
 .skill {
-    background: linear-gradient(120deg, #a8e6cf, #dcedc1);
-    color: #2e407d;
+    background: linear-gradient(120deg, #94d2bd, #e9d8a6); /* Tonos profesionales y modernos */
+    color: #333333;
     padding: 10px 15px;
     margin: 5px;
     border-radius: 5px;
@@ -63,25 +57,23 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Pie de página */
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #38608e;
+    background-color: #005f73; /* Mismo tono que el encabezado */
     color: white;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Enlaces */
 a {
-    color: #38398e;
+    color: #0a9396;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #3766a3;
+    color: #005f73;
     text-decoration: underline;
 }
