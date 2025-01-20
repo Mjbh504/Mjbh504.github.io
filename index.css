@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(120deg, #e0ffe1, #a8e6cf); /* Fondo solar punk */
-    color: #2f4f4f;
+    color: #32caca;
 }
 
 /* Encabezado principal */
 header {
-    background-color: #4caf50;
+    background-color: #2c6d79;
     color: white;
     padding: 20px 20px;
     text-align: center;
@@ -28,7 +28,7 @@ header {
 
 /* Títulos */
 h1, h2 {
-    color: #388e3c;
+    color: #3e388e;
     text-shadow: 1px 1px 2px #f0f0f0;
 }
 
@@ -49,7 +49,7 @@ ul {
 
 .skill {
     background: linear-gradient(120deg, #a8e6cf, #dcedc1);
-    color: #2e7d32;
+    color: #2e407d;
     padding: 10px 15px;
     margin: 5px;
     border-radius: 5px;
@@ -68,20 +68,20 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #388e3c;
+    background-color: #38608e;
     color: white;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Enlaces */
 a {
-    color: #388e3c;
+    color: #38398e;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #1b5e20;
+    color: #3766a3;
     text-decoration: underline;
 }
