@@ -3,13 +3,15 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #f4f4f4, #dfe9f3); /* Fondo profesional con tonos neutros */
+    background: linear-gradient(120deg, #f4f4f4, #dfe9f3);
+    /* Fondo profesional con tonos neutros */
     color: #333333;
 }
 
 /* Encabezado */
 header {
-    background-color: #005f73; /* Azul profesional oscuro */
+    background-color: #005f73;
+    /* Azul profesional oscuro */
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -25,8 +27,10 @@ header img {
 }
 
 /* Títulos */
-h1, h2 {
-    color: #0a9396; /* Tonos azules suaves */
+h1,
+h2 {
+    color: #0a9396;
+    /* Tonos azules suaves */
     text-shadow: 1px 1px 2px #e0e0e0;
 }
 
@@ -61,7 +65,8 @@ ul li {
 }
 
 .skill {
-    background: linear-gradient(120deg, #94d2bd, #e9d8a6); /* Tonos profesionales y modernos */
+    background: linear-gradient(120deg, #94d2bd, #e9d8a6);
+    /* Tonos profesionales y modernos */
     color: #333333;
     padding: 15px;
     border-radius: 5px;
