@@ -1,105 +1,55 @@
+/* === Estilos personalizados para mejorar la estética con Tailwind === */
+
 /* Estilo global */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #f4f4f4, #dfe9f3);
-    /* Fondo profesional con tonos neutros */
-    color: #333333;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Encabezado */
-header {
-    background-color: #005f73;
-    /* Azul profesional oscuro */
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Animación de hover para habilidades */
+.skill-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
+/* Estilos personalizados para la imagen de perfil */
+.profile-img {
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Títulos */
-h1,
-h2 {
-    color: #0a9396;
-    /* Tonos azules suaves */
-    text-shadow: 1px 1px 2px #e0e0e0;
+.profile-img:hover {
+  transform: rotate(5deg) scale(1.05);
 }
 
-h1 {
-    font-size: 2.5rem;
+/* Tarjetas de experiencia con sombra y animación */
+.card {
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-h2 {
-    font-size: 1.8rem;
-    border-bottom: 2px solid #0a9396;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+.card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
-/* Listas */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+/* Contacto - enlaces interactivos */
+.contact-link {
+  transition: color 0.3s ease-in-out;
 }
 
-ul li {
-    margin-bottom: 10px;
-    color: #555555;
+.contact-link:hover {
+  color: #065f46; /* Un verde más oscuro para resaltar */
+  text-decoration: underline;
 }
 
-/* Habilidades */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.skill {
-    background: linear-gradient(120deg, #94d2bd, #e9d8a6);
-    /* Tonos profesionales y modernos */
-    color: #333333;
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.skill:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Contacto */
-#contact a {
-    color: #0a9396;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#contact a:hover {
-    color: #005f73;
-    text-decoration: underline;
-}
-
-/* Pie de página */
+/* Footer con sombra */
 footer {
-    background-color: #005f73;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+#about {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
