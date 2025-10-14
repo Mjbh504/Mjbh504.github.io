@@ -1,55 +1,91 @@
-/* === Estilos personalizados para mejorar la estética con Tailwind === */
-
-/* Estilo global */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Animación de hover para habilidades */
-.skill-hover:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
+/* Imagen de perfil */
+#profile-img {
+  transition: transform 0.35s ease;
+  cursor: pointer;
+}
+#profile-img.rotate {
+  transform: rotate(12deg) scale(1.03);
 }
 
-/* Estilos personalizados para la imagen de perfil */
-.profile-img {
-  transition: transform 0.3s ease-in-out;
+/* Hover skills */
+.skill-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
-.profile-img:hover {
-  transform: rotate(5deg) scale(1.05);
-}
-
-/* Tarjetas de experiencia con sombra y animación */
+/* Tarjetas */
 .card {
-  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .card:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.12);
 }
 
-/* Contacto - enlaces interactivos */
-.contact-link {
-  transition: color 0.3s ease-in-out;
+/* Fondo opcional para About */
+#about-card {
+  background-size: cover;
+  background-position: center;
 }
 
-.contact-link:hover {
-  color: #065f46; /* Un verde más oscuro para resaltar */
-  text-decoration: underline;
+/* Power BI embed */
+.pb-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.pb-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-/* Footer con sombra */
-footer {
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+/* Report card styles in gallery */
+.report-card {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  border: 1px solid rgba(15,23,42,0.04);
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
 }
-#about {
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    color: white;
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(2,6,23,0.06);
+}
+.report-card.active {
+  border: 1px solid rgba(16,185,129,0.25);
+  box-shadow: 0 12px 30px rgba(6,95,70,0.08);
+  background: linear-gradient(90deg, rgba(16,185,129,0.03), rgba(6,95,70,0.01));
+}
+.report-thumb {
+  width: 64px;
+  height: 44px;
+  background: #e6fffa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.35rem;
+  font-size: 0.75rem;
+  color: #065f46;
+  border: 1px dashed rgba(6,95,70,0.08);
+}
+
+/* Small screens: make gallery horizontal scroll */
+@media (max-width: 768px) {
+  #reports-gallery {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+  .report-card { min-width: 220px; flex: 0 0 auto; }
 }

@@ -1,150 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mauricio Bonilla | Data Analyst</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <!-- Encabezado -->
-    <header
-      class="bg-gradient-to-r from-teal-700 to-teal-900 text-white text-center py-10 shadow-lg"
-    >
-      <img
-        src="Foto de perfil.png"
-        alt="Your Photo"
-        class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-md"
-      />
-      <h1 class="text-4xl font-bold mt-4">Mauricio Bonilla</h1>
-      <p class="text-lg text-gray-300">Data Analyst | Automation Specialist</p>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mauricio Bonilla | Data Analyst</title>
 
-    <!-- Contenido principal -->
-    <main class="container mx-auto px-6 py-12">
-      <!-- Sobre Mí -->
-      <section id="about" class="mb-10">
-        <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105 duration-300">
-            <h2 class="text-primary text-2xl font-semibold mb-4">About Me</h2>
-            <p class="text-lg text-gray-700">
-                Hello! I am a forward-thinking professional dedicated to building sustainable and innovative solutions. 
-                My expertise lies in data management, visualization, and creating impactful systems for efficient decision-making.
-            </p>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-teal-700 to-teal-900 text-white text-center py-8 shadow-lg">
+    <div class="container mx-auto px-6 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <img id="profile-img" src="Foto de perfil.png" alt="Mauricio Bonilla" class="w-24 h-24 rounded-full border-4 border-white shadow-md">
+        <div class="text-left">
+          <h1 id="hero-name" class="text-2xl md:text-3xl font-bold leading-tight">Mauricio Bonilla</h1>
+          <p id="hero-sub" class="text-sm md:text-base text-teal-100">Data Analyst | Automation Specialist</p>
         </div>
-    </section>
-    
+      </div>
 
-      <!-- Experiencia -->
-      <section id="experience" class="mb-12">
-        <h2
-          class="text-2xl font-bold text-teal-700 border-b-2 border-teal-500 pb-2"
-        >
-          Experience
-        </h2>
-        <div class="mt-6 grid md:grid-cols-2 gap-6">
-          <div
-            class="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition"
-          >
-            <h3 class="text-xl font-semibold text-gray-800">
-              Cargill Animal Nutrition
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Customer Service Information Analyst (2023 - 2024)
-            </p>
-            <ul class="list-disc pl-5 mt-3 text-gray-700">
-              <li>Managed regional data systems.</li>
-              <li>Developed Power BI dashboards.</li>
-              <li>Automated workflows with Power Automate.</li>
-            </ul>
-          </div>
-          <div
-            class="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition"
-          >
-            <h3 class="text-xl font-semibold text-gray-800">
-              Hanes Brands Inc.
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Logistic & Demand Data Analysis (2022 - 2023)
-            </p>
-            <ul class="list-disc pl-5 mt-3 text-gray-700">
-              <li>Developed supply chain tracking tools.</li>
-              <li>Integrated Power Apps for business solutions.</li>
-              <li>Optimized IT hardware inventory.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <!-- Language buttons -->
+      <div class="flex items-center space-x-2">
+        <div class="text-sm text-teal-100 mr-2 hidden md:block" id="lang-label">Language</div>
+        <button id="btn-en" class="lang-btn px-3 py-1 rounded bg-white/10 hover:bg-white/20 text-white text-sm" aria-pressed="false">EN</button>
+        <button id="btn-es" class="lang-btn px-3 py-1 rounded bg-white/10 hover:bg-white/20 text-white text-sm" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
 
-      <!-- Habilidades -->
-      <section id="skills" class="mb-12">
-        <h2
-          class="text-2xl font-bold text-teal-700 border-b-2 border-teal-500 pb-2"
-        >
-          Skills
-        </h2>
-        <div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            Power BI & Tableau
-          </div>
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            Python & Automation
-          </div>
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            ETL Processes
-          </div>
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            Data Management
-          </div>
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            Sustainability Solutions
-          </div>
-          <div
-            class="bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold hover:bg-teal-200 transition"
-          >
-            Creative Problem Solving
-          </div>
-        </div>
-      </section>
+  <!-- Main -->
+  <main class="container mx-auto px-6 py-10">
 
-      <!-- Contacto -->
-      <section id="contact" class="mb-12 text-center">
-        <h2
-          class="text-2xl font-bold text-teal-700 border-b-2 border-teal-500 pb-2"
-        >
-          Contact Me
-        </h2>
-        <p class="mt-4 text-gray-700">
-          Let’s connect and collaborate for a brighter future!
+    <!-- ABOUT ME -->
+    <section id="about" class="mb-10 fade-in">
+      <div id="about-card" class="bg-white/95 p-6 rounded-xl shadow-lg card">
+        <h2 id="about-title" class="text-2xl font-semibold text-teal-700 mb-3">About Me</h2>
+        <p id="about-text" class="text-gray-700 leading-relaxed">
+          Hello! I am a forward-thinking professional dedicated to building sustainable and innovative solutions. My expertise lies in data management, visualization, and creating impactful systems for efficient decision-making.
         </p>
-        <div class="mt-6 space-y-4">
-          <p class="text-lg">
-            📧
-            <a
-              href="mailto:mauritcio.bonilla@outlook.com"
-              class="text-teal-600 hover:text-teal-800"
-              >mauritcio.bonilla@outlook.com</a
-            >
-          </p>
-          <p class="text-lg">
-            📞 <span class="text-teal-600">+504 89882113</span>
-          </p>
-        </div>
-      </section>
-    </main>
 
-    <!-- Pie de Página -->
-    <footer class="bg-teal-900 text-white text-center py-4">
-      <p>&copy; 2025 Mauricio Bonilla. Building a sustainable future.</p>
-    </footer>
-  </body>
+        <div id="about-skills" class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <div class="text-sm text-gray-600">Power BI</div>
+            <div class="w-full bg-gray-200 h-2 rounded-full mt-1"><div class="h-2 rounded-full bg-teal-600" style="width:85%"></div></div>
+          </div>
+          <div>
+            <div class="text-sm text-gray-600">Python & Automation</div>
+            <div class="w-full bg-gray-200 h-2 rounded-full mt-1"><div class="h-2 rounded-full bg-teal-600" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div class="text-sm text-gray-600">ETL / Data Mgmt</div>
+            <div class="w-full bg-gray-200 h-2 rounded-full mt-1"><div class="h-2 rounded-full bg-teal-600" style="width:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & SKILLS -->
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+
+      <!-- Experience -->
+      <div class="fade-in card bg-white p-6 rounded-xl shadow-lg">
+        <h2 id="exp-title" class="text-2xl font-semibold text-teal-700 mb-4">Experience</h2>
+
+        <article class="mb-5">
+          <h3 id="exp1-title" class="font-semibold text-gray-800">Cargill Animal Nutrition</h3>
+          <div class="text-sm text-gray-500 mb-2" id="exp1-date">October 2023 - August 2024</div>
+          <p class="text-gray-700">Customer Service Information Analyst.</p>
+          <ul class="list-disc pl-5 mt-2 text-gray-700" id="exp1-list">
+            <li>Managed regional data systems.</li>
+            <li>Developed Power BI dashboards.</li>
+            <li>Automated workflows with Power Automate.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3 id="exp2-title" class="font-semibold text-gray-800">Hanes Brands Inc. Choloma</h3>
+          <div class="text-sm text-gray-500 mb-2" id="exp2-date">August 2022 - August 2023</div>
+          <p class="text-gray-700">Logistic & Demand Data Analysis.</p>
+          <ul class="list-disc pl-5 mt-2 text-gray-700" id="exp2-list">
+            <li>Developed supply chain tracking tools.</li>
+            <li>Integrated Power Apps for business solutions.</li>
+            <li>Optimized IT hardware inventory.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Skills -->
+      <div id="skills" class="fade-in card bg-white p-6 rounded-xl shadow-lg">
+        <h2 id="skills-title" class="text-2xl font-semibold text-teal-700 mb-4">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">Power BI & Tableau</div>
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">Python & Automation</div>
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">ETL Processes</div>
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">Data Management</div>
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">Sustainability Solutions</div>
+          <div class="skill-hover bg-teal-100 text-teal-800 p-4 rounded-lg text-center font-semibold">Creative Problem Solving</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- POWER BI REPORTS -->
+    <section class="mb-12 grid lg:grid-cols-3 gap-8">
+
+      <!-- Gallery -->
+      <div class="lg:col-span-1">
+        <h2 class="text-2xl font-semibold text-teal-700 mb-4" id="reports-title">Power BI Reports</h2>
+        <p class="text-gray-600 mb-4" id="reports-desc">Choose a report to view below.</p>
+
+        <div id="reports-gallery" class="grid gap-3">
+          <!-- JS will populate report cards here -->
+        </div>
+
+        <div class="mt-4">
+          <button id="open-report-btn" class="w-full bg-teal-600 text-white py-2 rounded hover:bg-teal-700 transition">Open selected report in Power BI</button>
+        </div>
+      </div>
+
+      <!-- Viewer -->
+      <div class="lg:col-span-2">
+        <div class="fade-in card bg-white p-4 rounded-xl shadow-lg">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 id="viewer-title" class="text-xl font-semibold text-gray-800">Selected report</h3>
+              <p id="viewer-desc" class="text-sm text-gray-500">Report description will appear here.</p>
+            </div>
+            <div>
+              <span id="viewer-badge" class="inline-block text-xs px-2 py-1 rounded bg-gray-100 text-gray-700">Interactive</span>
+            </div>
+          </div>
+
+          <div class="pb-container rounded-md overflow-hidden border">
+            <iframe id="report-iframe" title="Power BI Report"
+              src=""
+              allowfullscreen
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <p class="text-xs text-gray-500 mt-3">Tip: reports may take a few seconds to load the first time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <h2 id="contact-title" class="text-2xl font-semibold text-teal-700 mb-3">Contact Me</h2>
+        <p id="contact-desc" class="text-gray-700 mb-4">Let’s connect and collaborate for a brighter future!</p>
+        <p class="text-lg">
+          📧 <a id="email-link" class="contact-link text-teal-600 hover:text-teal-800" href="mailto:mauritcio.bonilla@outlook.com">mauritcio.bonilla@outlook.com</a>
+        </p>
+        <p class="text-lg mt-2">📞 <span id="phone-span" class="text-teal-600">+504 89882113</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-teal-900 text-white text-center py-4">
+    <p id="footer-text">&copy; 2025 Mauricio Bonilla. Building a sustainable future.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="index.js"></script>
+</body>
 </html>
